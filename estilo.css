@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 body{
     background: #FAFAFA;
     font-family: 'Arial';
@@ -97,7 +98,7 @@ body{
 .caixa-stories{
     margin-top: 88px;
     margin-bottom: 24px;
-    background-color: #FFFFFF;;
+    background-color: #FFFFFF;
     width: 614px;
     height: 118px;
     border: 1px solid #DBDBDB;
@@ -107,12 +108,6 @@ body{
     align-items: center;
     position: relative;
 }
-.caixa-stories div{
-    text-align: center;
-    position: relative;
-    width: 80px;
-    margin-left: 15px;
-}
 .caixa-stories ion-icon{
     color: white;
     font-size: 26px;
@@ -121,90 +116,47 @@ body{
     top:46px;
     right: 8px;
 }
-.imgback{
-    width: 66px;
-    height: 66px;
+.story{
+    text-align: center;
+    margin-left: 15px;
 }
-.img1{
+.story div{
     width: 56px;
+    height: 56px;
     border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
+    background-image: url(imagens/stories_background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.img2{
-    width: 56px;
+.imgStory{
+    width: 48px;
     border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img3{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img4{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img5{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img6{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img7{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img8{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
-}
-.img9{
-    width: 56px;
-    border-radius: 100%;
-    position: absolute;
-    top:5px;
-    left:5px;
 }
 /*Fim da caixa dos Stories*/
 /*Inicio do conteudo*/
 .conteudo{
     background-color: #FFFFFF;;
     width: 614px;
-    height: 749px;
+    height: auto;
     border: 1px solid #DBDBDB;
-    box-sizing: border-box;
     margin-bottom: 60px;
 }
 
 .barra-superior{
+    width: 100%;
     height: 60px;
     border-bottom: 1px solid #EFEFEF;
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
+}
+.barra-superior div{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
 }
 .barra-superior img{
     width: 32px;
@@ -217,34 +169,38 @@ body{
     font-weight: bold;
 }
 .barra-superior ion-icon{
-    position:absolute;
-    bottom: auto;
-    right: 15px;
+    width: 5%;
+    margin-right: 15px;
 }
 
-.conteudo img:nth-child(2){
+.conteudo > img{
     width: 612px;
 }
 
 .barra-inferior{
+    width: 100%;
     height: 76px;
-    position: relative;
-}
-.barra-inferior ion-icon:nth-child(4){
-    position: absolute;
-    top: 0px;
-    right: 15px;
 }
 .barra-inferior ion-icon{
     font-size: 15px;
-    margin-top: 10px;
     margin-left: 15px;
-    margin-bottom: 10px;
 }
-.barra-inferior div{
+.barra-inferior ion-icon:last-child{
+    margin-right: 15px;
+}
+.barra-inferior > div:first-child{
+    width: 100%;
+    height: 50%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.barra-inferior > div:last-child{
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
-    margin-left: 15px
+    padding-left: 15px
 }
 .barra-inferior img{
     width: 20px;
@@ -283,7 +239,8 @@ body{
 }
 .indicador{
     margin-top: 24px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .indicador p:first-child{
     color: #8E8E8E;
@@ -292,15 +249,17 @@ body{
 .indicador p:last-child{
     font-weight: bold;
     font-size: 12px;
-    position: absolute;
-    top:0;
-    right: 0;
 }
 .sugestões{
     margin-top: 17px;
     display: flex;
     align-items: center;
-    position: relative;
+}
+.sugestões > div{
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .sugestões img{
     width: 32px;
@@ -308,22 +267,19 @@ body{
     border-radius: 100%;
     margin-right: 11px;
 }
-.sugestões p:first-child{
+.sugestões p:nth-child(1){
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 5px;
 }
-.sugestões p:nth-child(2){
+.sugestões > div > div > p:nth-child(2){
     color: #8E8E8E;
     font-size: 12px;
 }
-.sugestões p:last-child{
+.sugestões > div > p{
     color: #139EF2;
     font-weight: bold;
     font-size: 12px;
-    position: absolute;
-    bottom: 10px;
-    right: 0;
 }
 .sidebar>p{
     color: #C7C7C7;
@@ -353,6 +309,12 @@ body{
 /*Fim do Layout sem sidebar*/
 /*Inicio do Layout mobile*/
 @media(max-width:614px){
+    .toda-pagina{
+        width: 100%;
+    }
+    .storie-conteudo{
+        width: 100%;
+    }
     .barra-topo{
         display: none;
     }
@@ -362,15 +324,15 @@ body{
     .barra-baixo-mobile{
         display: inline-flex;
     }
+    
     .caixa-stories{
         background-color: #FAFAFA;
         width: 100%;
         border: none;
+        border-radius: none;
         margin-top: 52px;
         margin-bottom: 0;
-    }
-    .storie-conteudo{
-        width: 100%;
+        overflow: auto;
     }
     .caixa-stories ion-icon{
         display: none;
@@ -379,12 +341,24 @@ body{
     .conteudo{
         width: 100%;
         height: auto;
-        border: 0;
+        border: none;
         border-top: 1px solid #DBDBDB;
         border-bottom: 1px solid #DBDBDB;
     }
-    .conteudo img:nth-child(2){
+    .conteudo > img{
         width: 100%;
+        height: auto;
+    }
+
+    .barra-superior img{
+        width: auto;
+        height: 50%;
+    }
+
+    .barra-inferior img{
+        width: auto;
+        height: 50%;
+        border-radius: 100%;
     }
 }
 /*Fim do Layout mobile*/
