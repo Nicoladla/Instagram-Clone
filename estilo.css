@@ -120,6 +120,9 @@ body{
     text-align: center;
     margin-left: 15px;
 }
+.story p{
+    font-size: 15px;
+}
 .story div{
     width: 56px;
     height: 56px;
