@@ -13,11 +13,14 @@ Esse projeto tem uma interface fixa e responsiva, tendo sua versão para desktop
 ## Confira a versão mobile:
 
 <p align="start">
-  <img width="400" src="imagens/Instagram-mobile-Animação.gif" alt="Instagram-gif">
+  <img width="200" src="imagens/Instagram-mobile-Animação.gif" alt="Instagram-gif">
 </p>
 
 * Você pode acessar essa aplicação nesse link:
-[https://nicoladla.github.io/Globo.com-Clone/](https://nicoladla.github.io/Globo.com-Clone/)
+[https://nicoladla.github.io/Instagram-Clone/](https://nicoladla.github.io/Instagram-Clone/)
+
+* Você também pode acessar o repositório de uma segunda versão dessa mesma aplicação, que foi feita usando [react.js](https://react.dev/):
+[https://github.com/Nicoladla/Instagram-React-Clone](https://github.com/Nicoladla/Instagram-React-Clone)
 
 ---
 
