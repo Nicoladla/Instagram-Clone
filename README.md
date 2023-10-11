@@ -17,7 +17,7 @@ Esse projeto tem uma interface fixa e responsiva, tendo sua versão para desktop
 </p>
 
 * Você pode acessar essa aplicação nesse link:
-[https://nicoladla.github.io/Instagram-Clone/](https://nicoladla.github.io/Instagram-Clone/)
+[https://nicoladla.github.io/Instagram-Clone/](https://github.com/Nicoladla/Instagram_React)
 
 * Você também pode acessar o repositório de uma segunda versão dessa mesma aplicação, que foi feita usando **react.js**:
 [https://github.com/Nicoladla/Instagram-React-Clone](https://github.com/Nicoladla/Instagram-React-Clone)
