@@ -32,7 +32,9 @@ Essa aplicação foi desenvolvida utilizando as tecnologias:
 
 ### Como iniciar o projeto na minha máquina?
 
-* O primeiro passo é você fazer o download do projeto para sua máquina ou então clonar esse repositório através do seu terminal:
+- O primeiro passo é você fazer o download do projeto para sua máquina: [Download ZIP](https://github.com/Nicoladla/Instagram-Clone/archive/refs/heads/main.zip)
+
+- Ou então clonar esse repositório através do seu terminal:
 
 ```
 git clone https://github.com/Nicoladla/Instagram-Clone.git
